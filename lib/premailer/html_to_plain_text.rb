@@ -35,7 +35,7 @@ module HtmlToPlainText
       if $3.empty?
         ''
       else
-        $3.strip + ' ( ' + $2.strip + ' )'
+        $3.strip + "\nedima_link" + $2.strip + "edima_closelink"
       end
     end
 
@@ -43,7 +43,7 @@ module HtmlToPlainText
       if $3.empty?
         ''
       else
-        $3.strip + ' ( ' + $2.strip + ' )'
+        $3.strip + "\n" + 'edima_link' + $2.strip + 'edima_closelink'
       end
     end
 
